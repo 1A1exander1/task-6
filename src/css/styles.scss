@@ -1,0 +1,19 @@
+@import "smart-grid";
+@import "fonts";
+@import "variables";
+@import "header";
+@import "content";
+@import "footer";
+
+
+/*.degubGrid{
+   @include debug(rgba(0, 0, 0, 0.4), 1px solid #ff0);
+}*/
+
+@include reset();
+body, html{
+   width: 100vw;
+   height: 885px;
+   min-width: 500px;
+  
+}
