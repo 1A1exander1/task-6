@@ -2,14 +2,13 @@
 
 .wrapper{
     @include wrapper();
-    width: 100%;
+  
+    
 
 }
 .content{
-    background: linear-gradient(150.61deg, #171717 8.22%, #1C1C1D 89.77%), #171717;
-    background-image: url(../img/Element31.png);
-    background-repeat: no-repeat;
-    background-position: bottom right;
+
+    
     font-family: 'Enigmo';
     padding: 0;
     margin:0 ;
@@ -18,10 +17,10 @@
         .main{
             @include row-flex();
             justify-content: center;
-           width: 100%;
-            height: 885px;
+           
             margin:0 ;
             .block{
+                margin-top: 7% ;
                 @include col();
                 @include size(3);
                 @include size-sm(12);
@@ -36,7 +35,7 @@
                 box-shadow: 1px 1px 10px 4px #000000;
                 opacity: 0.8;
                 border-radius: 10px;           
-                margin-top:157px ;
+              
                 margin-left:0 ;
                 margin-right:0 ;
                 
@@ -125,7 +124,7 @@
             }
         }
         .room{
-            width: 100%;
+            
             
             @include row-flex();
             justify-content: center;
@@ -166,7 +165,7 @@
                 @include col();
                 @include size(12);
                 display: flex;
-                margin-bottom:100px ;
+                
                 max-width: 1045px;
                 
                 height: 590px;
@@ -174,8 +173,8 @@
                 .screen{
                     @include col();
                     @include size(8);
-                    @include size-sm(12);
-                    @include sm-block(){
+                    @include size-lg(12);
+                    @include lg-block(){
                         position: relative;
                       }
                   
@@ -200,11 +199,9 @@
                         }
                     }
                     .video{
-                        @include sm-block(){
+                        @include lg-block(){
                             width: 100%;
-                            margin-left:0 ;
-                            margin-top: 100px ;
-                            padding:0 ;
+                           
                         }
                         margin-left:65px ;
                         margin-top: 100px ;
@@ -218,7 +215,7 @@
                         video{
                             margin-top:15px ;
                             background:black;
-                            max-width: 640px;
+                            max-width: 740px;
                             width: 100%;
                             height: 360px;
                         }
@@ -227,13 +224,15 @@
                 .users{
                     @include col();
                      @include size(4);
-                     @include sm-block(){
-                         position: absolute;
+                     @include size-lg(12);
+                     @include lg-block(){
+                        position: relative;
+                        z-index: 10;
                      }
                      background: linear-gradient(150.61deg, #171717 8.22%, #1C1C1D 89.77%), #171717;
                      border-radius: 10px;
-                     
-                     height: 543px;
+                     height: 87%;
+                     margin-top:28px;
                     .userContent{
                         .heading{
                             p{
@@ -255,60 +254,31 @@
                                 }
                             }
                         }
-                        .scrollbar-inner{
-                           
-                            width: 322px;
-                            
-                            display: flex;
-                             height: 420px;
-                            .text{
-                                width: 255px;
-
-                                margin-left:40px ;
-                                margin-top:40px ;
-                               
-                                p{
-                                    font-family: Roboto;
-                                    font-style: normal;
-                                    font-weight: normal;
-                                    font-size: 16px;
-                                    line-height: 19px;
-                                    letter-spacing: 0.5px;
-                                    padding: 10px 10px;
-                                    color: #8C9C9A;
-                                    background: black;
-                                    
-                                }
-                            }
-                            .block{
-                                background: red;
-                                height: 20px;
-                            }
-                          
-                        }
+                    .userList{
                         
-                        .scroll-element{
-                            width: 14px;
-                            
-                            background: linear-gradient(150.61deg, #171717 8.22%, #1C1C1D 89.77%), #171717;
-                            .scroll-bar{
-                                width: 10px;
-                                height: 17px !important;
+                            margin-top: 22px ;
+                            .list{
+                                margin:0 auto ;
                                 
-                                position: relative;
-                                left: 2px ;
-                                background: #7a7474;
-                                border-radius: 100px;
-                            }
-                            .scroll-element_track{
-                                border-radius:10px;
-                             
-                                 
+                                width: 75%;
+                                height: 448px;
                                 background: black;
-                            
+                                border-radius: 10px;
+                               p{
+                                 padding-top:34px ;  
+                                 padding-left: 39px ;
+                                font-family: Roboto;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 16px;
+                                line-height: 19px;
+                                letter-spacing: 0.5px;
+
+                                color: #8C9C9A;
+                               } 
                            
                         }
-                        }
+                    }
                         
                        
                        
@@ -319,16 +289,19 @@
                 }
             }
             .messages{
-                width: 1039px;
+                @include col();
+                @include size(8);
+               
+               
                 height: 339px;
-                position: relative;
-                bottom: 100px;
-                margin-bottom: 300px ;
+             
+               
+
                 
                 background: linear-gradient(180deg, #151515 0%, #000000 100%);
                 box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.8);
                 border-radius: 20px;
-                
+                margin-left:4.8% ;
                .user{
                    margin: 20px 10px ;
                    p{
@@ -397,7 +370,7 @@
                     color: #8C9C9A;
                     text-align: left;
                     
-                    width: 702px;
+                    width: 69%;
                     height: 69px;
                     border-radius: 10px;
                 }
@@ -421,11 +394,111 @@
                     border-top: 17px solid #252525;
                     border-left: 16px solid transparent;
                     border-right: 16px solid transparent;
-                    top: -1px;
-                    left: -17px;
+                    top: 0px;
+                    left: -16px;
                 }
                 }
                }
+               .userTwo{
+                margin: 20px 10px ;
+                p{
+                 font-family: Roboto;
+                 font-style: normal;
+                 font-weight: 300;
+                 font-size: 14px;
+                 line-height: 16px;
+                 display: flex;
+                 align-items: center;
+                 letter-spacing: 0.2px;
+                 margin-left:35px ;
+                 position: relative;
+                 
+                 bottom: 10px;
+                 color: #8C9C9A;
+                 span{
+                     padding: 0 40px ;
+                     font-style: italic;
+                     font-weight: 300;
+                     font-size: 12px;
+                     line-height: 24px;
+                     /* or 200% */
+
+                     display: flex;
+                     align-items: center;
+                     letter-spacing: 0.2px;
+
+                     color: #087464;
+                 }
+                }
+             .block{
+                 display: flex;
+              .img{
+                 width: 28.42px;
+                 height: 28.61px;
+                 position: relative;
+                 left: 10px;
+                 top: 10px;
+                 border-radius: 50%;
+                 background: #252525;
+                 background-image:url(../img/Union.png);
+                 background-repeat: no-repeat;
+                 background-position: center;
+              }  
+
+             .message-blue {
+                 position: relative;
+                 margin-left: 20px;
+                 margin-bottom: 10px;
+                 padding: 10px;
+                 background: #3F3F3F;
+                 border-radius: 20px;
+                 
+                
+                 font-family: Roboto;
+                 font-style: normal;
+                 font-weight: 300;
+                 font-size: 14px;
+                 line-height: 24px;
+                 /* or 171% */
+                 
+                 display: flex;
+                 align-items: center;
+                 letter-spacing: 0.2px;
+                 
+                 color: #8C9C9A;
+                 text-align: left;
+                 
+                 width: 59%;
+                 height: 89px;
+                 border-radius: 10px;
+             }
+
+
+
+             .message-content {
+                 padding: 0;
+                 margin: 0;
+             }
+
+
+
+
+
+             .message-blue:before {
+                 content: '';
+                 position: absolute;
+                 width: 0;
+                 height: 0;
+                 border-top: 17px solid #3F3F3F;
+                 border-left: 16px solid transparent;
+                 border-right: 16px solid transparent;
+                 top: 0px;
+                 left: -16px;
+                  
+             }
+             }
+            }
+             
 
 
 
@@ -443,6 +516,47 @@
 
 
 
+            }
+            .form{
+                @include col();
+                @include size(7);
+                display: flex;
+                margin-right:50px ;
+                padding-top: 31px;
+                padding-bottom:204px ;
+                button{
+                    background-image:url(../img/icon.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    outline:none ;
+                    border: none;
+                    background-color: #087464;
+                    align-self: center;
+                    margin-left:19px;
+                }
+                input[type=text]{
+                    background: #111111;
+                    border: 1px solid #067362;
+                    box-sizing: border-box;
+                    box-shadow: inset -4px -8px 10px rgba(35, 35, 35, 0.5), inset 4px 4px 10px rgba(0, 0, 0, 0.5);
+                    border-radius: 5px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 16px;
+                    /* or 100% */
+                    outline:none ;
+                    padding-left:14px ;
+                    width: 60%;
+                    height: 56px;
+                    letter-spacing: 0.2px;
+
+                    color: #8C9C9A;
+                }
             }
         }
     }

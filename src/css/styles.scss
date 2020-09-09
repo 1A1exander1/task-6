@@ -13,7 +13,12 @@
 @include reset();
 body, html{
    width: 100vw;
-   height: 885px;
+   height: 100Vh;
+   background: linear-gradient(150.61deg, #171717 8.22%, #1C1C1D 89.77%), #171717;
+   background-image: url(../img/Element31.png);
+   background-repeat: no-repeat;
+   background-position: bottom right;
    min-width: 500px;
+   overflow-x:hidden;
   
 }

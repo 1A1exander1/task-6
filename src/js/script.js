@@ -5,9 +5,6 @@ $("select").on("click" , function() {
   
 });
 
-jQuery(document).ready(function(){
-  jQuery('.scrollbar-inner').scrollbar();
-});
 
 
 
