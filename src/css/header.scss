@@ -62,12 +62,34 @@
                         color: #8C9C9A;
                     }
                 }
-                .imgLogo{
-                    margin-top: 49px;
+                form{
                     display: flex;
                     justify-content: center;
                 }
-                .form{
+                .pane-content{
+                    .title{
+                        text-align: center;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 24px;
+                        /* or 100% */
+
+                      
+                        text-align: center;
+                        letter-spacing: 0.2px;
+
+                        color: #8C9C9A;
+                    }
+                }
+                #edit-logo{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 49px;
+                    margin-bottom: 49px;
+                   
+                }
+                .form-item{
                     display: flex;
                     justify-content: center;
                     margin-top: 67px ;
@@ -91,11 +113,9 @@
                         height: 51px;
                     }
                 }
-                .btn{
-                    display: flex;
-                    justify-content: center;
-                    margin-top: 38px ;
-                    button{
+                
+                    .btn{
+                        margin-top: 30px;
                         outline:none ;
                         background: #171717;
                         border: 1px solid #067362;
@@ -103,7 +123,7 @@
                         border-radius: 10px;
                         width: 332px;
                         height: 56px;
-                        a{
+                        
                             text-decoration:none;
                             font-family: Roboto;
                             font-style: normal;
@@ -118,9 +138,9 @@
 
                             color: #30C4AE;
 
-                        }
+                        
                     }
-                }
+                
             }
         }
         .room{
